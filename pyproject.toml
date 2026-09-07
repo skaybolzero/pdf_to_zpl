@@ -1,0 +1,22 @@
+[build-system]
+requires = ['setuptools>68.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'pdf-to-zpl'
+version = '0.1.0'
+description = 'Converte PDFs de etiquetas de estoque (QR Code + texto) em arquivos ZPL segmentados por SKU.'
+readme = 'README.md'
+requires-python = '>=3.10'
+dependencies = [
+    'pdf2image>=1.17.0',
+    'pyzbar>=0.1.9',
+    'pdfplumber>=0.11.9',
+    'Pillow>=10.0.0',
+]
+
+[project.scripts]
+pdf-to-zpl = 'pdf_to_zpl.cli:main'
+
+[tool.setuptools.packages.find]
+where = ['src']

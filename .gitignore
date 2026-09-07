@@ -1,0 +1,18 @@
+# Ambiente virtual
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# Dados reais / sensíveis - nunca versionar
+*.xlsx
+*.pdf
+saida_zpl/
+
+# Editor
+.vscode/
+.idea/
